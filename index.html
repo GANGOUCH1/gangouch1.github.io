@@ -84,6 +84,12 @@ h2.sec{font:700 clamp(26px,4vw,36px)/1.15 "Bricolage Grotesque",sans-serif;lette
 .proj li{margin-bottom:6px}
 .skills p+p{margin-top:10px}
 #publications p{max-width:70ch}
+.aboutp{max-width:66ch;margin:0 0 16px}
+.langs{margin:0;max-width:520px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.langs div{display:flex;justify-content:space-between;gap:16px;padding:14px 20px;border-bottom:1px solid var(--line)}
+.langs div:last-child{border-bottom:0}
+.langs dt{font-weight:600}
+.langs dd{margin:0;color:var(--muted);text-align:right}
 footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
 .contact a{margin-right:20px;font-weight:600}
 @media (max-width:700px){
@@ -99,6 +105,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
   <header class="top">
     <a class="brand" href="#top">Elhoussaine Gangouch</a>
     <nav aria-label="Main">
+      <a class="hide-sm" href="#about">About</a>
       <a class="hide-sm" href="#experience">Experience</a>
       <a class="hide-sm" href="#projects">Projects</a>
       <a class="hide-sm" href="#skills">Skills</a>
@@ -123,6 +130,13 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       </div>
       <p class="cap">SPECTRA cuts memory 100× and speeds up inference 10× compared with dense retrieval baselines, tested on seven industrial datasets.</p>
     </div>
+
+    <section id="about">
+      <h2 class="sec">About</h2>
+      <p class="aboutp">I’m a research engineer who designs new machine learning methods and ships them as working systems. At UM6P College of Computing I built SPECTRA, a retrieval-augmented forecasting framework that cuts memory 100× and inference time 10× compared with dense baselines, tested on seven industrial datasets. The paper is under review at Neural Computing and Applications.</p>
+      <p class="aboutp">My background is in applied mathematics and numerical methods (MSc, Faculty of Sciences Ain Chock). That is why I like problems where the math has to run efficiently: forecasting, anomaly detection, model compression and RAG systems. I build with PyTorch, FastAPI, LangChain, LlamaIndex and Qdrant.</p>
+      <p class="aboutp">I also teach and mentor: Python for data science with Data Science Africa, and hackathon mentoring at HackAI and NASA Space Apps. I’m looking for research engineering roles on teams working on efficient, reliable ML. The best way to reach me is on <a href="https://www.linkedin.com/in/elhoussainegangouch/">LinkedIn</a>.</p>
+    </section>
 
     <section id="experience">
       <h2 class="sec">Experience, teaching and mentoring</h2>
@@ -212,17 +226,27 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);f
       </div>
     </section>
 
-    <section id="about">
-      <h2 class="sec">Education, recognition and languages</h2>
+    <section id="education">
+      <h2 class="sec">Education and recognition</h2>
       <div class="skills">
         <div><h3>Education</h3><p><strong>Master’s in Numerical Methods and Applied Statistics</strong><br>Faculty of Sciences Ain Chock, Casablanca, July 2024<br>Thesis: Numerical Approximation of Maxwell’s Equations using IsoGeometric Analysis</p><p><strong>Bachelor in Applied Mathematics</strong><br>Faculty of Sciences Ain Chock, Casablanca, July 2021</p></div>
         <div><h3>Recognition and training</h3>
-          <p><strong>AISCA, Data Science Africa Compute Grant (Skilling Track), July 2026.</strong> A competitive GPU grant supporting African-led AI research and model prototyping.</p>
-          <p><strong>Masterclass in AI Coding Agents, Casablanca, June 2026.</strong> Agentic architectures, planning loops, context management and execution safety with OpenCode.</p>
+          <p><strong>Claude 101, Anthropic Education,</strong> August 2026. Verified certificate.</p>
+          <p><strong>AISCA, Data Science Africa Compute Grant (Skilling Track),</strong> July 2026. A competitive GPU grant supporting African-led AI research and model prototyping.</p>
           <p><strong>Cohere Labs Community Member,</strong> July 2026.</p>
+          <p><strong>Masterclass in AI Coding Agents, Oracle, Casablanca,</strong> June 2026. Agentic architectures, planning loops, context management and execution safety with OpenCode.</p>
           <p>Deep Learning Specialization, Coursera (2023). Professional Certificate in Deep Learning, IBM (2022).</p></div>
-        <div><h3>Languages</h3><p>Arabic and Amazigh (native), English (professional working proficiency), French (professional working proficiency).</p></div>
       </div>
+    </section>
+
+    <section id="languages">
+      <h2 class="sec">Languages</h2>
+      <dl class="langs">
+        <div><dt>Arabic</dt><dd>Native</dd></div>
+        <div><dt>Amazigh</dt><dd>Native</dd></div>
+        <div><dt>English</dt><dd>Professional working proficiency</dd></div>
+        <div><dt>French</dt><dd>Professional working proficiency</dd></div>
+      </dl>
     </section>
   </main>
 
